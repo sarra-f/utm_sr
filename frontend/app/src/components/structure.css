@@ -1,0 +1,44 @@
+#container{
+    display: inline-block;
+    margin-top: 20rem;
+    
+    
+}
+#item-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+#deno {
+    font-size: 15px !important;
+}
+
+#pp{
+    font-size: 13px;
+    
+}
+#pp i, #ppp i{
+    padding-right: 0.5rem;
+}
+#ppp {
+    color: black;
+}
+#deno, #code, #pp,#ppp {
+    text-align: center;
+  }
+
+#card {
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#logo{
+  
+        height: 100px;
+        width: auto;
+      
+}
