@@ -14,6 +14,7 @@ import Projet from './pages/Projet'
 import Pub from './pages/Pub'
 import Sr from './pages/Sr'
 import These from './pages/These'
+import Chercheur from './pages/Chercheur';
 
 export default function Routers() {
   return (
@@ -33,6 +34,7 @@ export default function Routers() {
                 <Route path="/contact" element={<Contact/>}></Route>
                 <Route path='/auth' element={<Auth/>}  />
                 <Route path='/user' element={<Home/>} />
+                <Route path="/chercheur" element={<Chercheur />} />
           </Routes>
       </Router>
     </div>
