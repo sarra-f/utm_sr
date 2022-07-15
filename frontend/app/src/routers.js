@@ -15,6 +15,7 @@ import Pub from './pages/Pub'
 import Sr from './pages/Sr'
 import These from './pages/These'
 import Chercheur from './pages/Chercheur';
+import Directeur from './pages/Directeur';
 
 export default function Routers() {
   return (
@@ -35,6 +36,7 @@ export default function Routers() {
                 <Route path='/auth' element={<Auth/>}  />
                 <Route path='/user' element={<Home/>} />
                 <Route path="/chercheur" element={<Chercheur />} />
+                <Route path='/directeur' element={<Directeur />} />
           </Routes>
       </Router>
     </div>
