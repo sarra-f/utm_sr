@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export const Opportunitie = () => {
   return (
@@ -32,7 +33,7 @@ export const Opportunitie = () => {
               <h2>SAISISSEZ VOTRE CHANCE</h2>
               <p>Contactez nos partenaires et dénicher votre projet futur </p>
             </div>
-            <div className="button_Section_cont"> <a className="btn dark_gray_bt" href="it_contact.html">Liste partenaires</a> </div>
+            <div className="button_Section_cont"> <Link to="/partenaire" className="btn dark_gray_bt" >Liste partenaires</Link> </div>
           </div>
         </div>
       </div>

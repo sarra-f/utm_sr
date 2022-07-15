@@ -22,7 +22,7 @@ export default function Routers() {
       <ToastContainer></ToastContainer>
       <Navbar/>
         <Routes>
-                <Route path="/" exact element={<Landingpage/>}></Route>
+                <Route path="/"  element={<Landingpage/>}></Route>
                 <Route path="/about" element={<About/>}></Route>
                 <Route path="/sr" element={<Sr/>}></Route>
                 <Route path="/these" element={<These/>}></Route>
