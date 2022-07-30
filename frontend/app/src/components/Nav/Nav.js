@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-// import './Nav.css';
+ import './Nav.css';
 
-import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router';
 
 import { useDispatch } from 'react-redux'; //redux
@@ -37,19 +37,19 @@ const Nav = () => {
     }, []);
 
     return (
-        <header className='header-area'>
+        <header className='header-areaa'>
             <div className='main-menu'>
                 <nav className={`navbar ${navbar ? 'active' : ''}`}>
-                    <div className='navbar-container max-window'>
-                        <Link className='navbar-logo' to='/'>
+                    <div className='navbar-containerr max-window'>
+                        <Link className='navbar-logo' to='#'>
                             Profile
                         </Link>
 
-                        <div className='nav-items'>
+                        <div className='nav-itemss'>
                             <ul className='nav-menu'>
                                 <li className='nav-item'>
                                     <a onClick={logoutHandler}>Se déconnecter</a>
-                                    {/* <Link to='/auth'>Logout</Link> */}
+                                    
                                 </li>
                             </ul>
                         </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { toast } from 'react-toastify';
-
+import { Link } from 'react-router-dom';
 import axios from '../../../axios';
 
 import PersonIcon from '@material-ui/icons/Person';
@@ -65,7 +65,12 @@ const Login = (props) => {
     };
 
     return (
+      
+       
         <form className='sign-in-form' onSubmit={loginFormHandler}>
+        <div>
+        <Link to="/"><i className="fa fa-home" aria-hidden="true"></i></Link>
+        </div>
             <h2 className='title'>Se connecter</h2>
 
             {Object.keys(errors).length > 0 && (
@@ -91,6 +96,7 @@ const Login = (props) => {
 
            
         </form>
+       
     );
 };
 

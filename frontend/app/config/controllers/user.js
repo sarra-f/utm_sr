@@ -47,7 +47,7 @@ exports.getUser = async (req, res, next) => {
             experience: user.experience,
             specialite: user.specialite,
             cursus: user.cursus,
-            these: user.these,
+          
         };
 
         if (user) {
@@ -109,9 +109,7 @@ exports.updateUser = (req, res, next) => {
             const specialite = req.body.specialite;
             const experience = req.body.experience;
             const cursus= req.body.cursus;
-            const titre= req.body.these.titre;
-            const resume= req.body.these.resume;
-            const pdf= req.body.these.pdf; 
+          
             const passedToken = req.body.token;
 
             if (!passedToken) {
@@ -175,7 +173,7 @@ exports.updateUser = (req, res, next) => {
                 });
             }
 
-            const updateData = { name, email, profilePic, experience, avancement,specialite, cursus,titre, resume, pdf};
+            const updateData = { name, email, profilePic, experience, avancement,specialite, cursus};
             // If user wants to change password
             if (password.length > 0 || newPassword.length > 0) {
                 const match = await bcrypt.compare(password, oldData.password);
@@ -209,9 +207,7 @@ exports.updateUser = (req, res, next) => {
                 avancement: doc.avancement,
                 specialite: doc.specialite,
                 cursus: doc.cursus,
-                these:{titre: doc.titre,
-                    resume: doc.resume,
-                    pdf: doc.pdf,}
+               
                 
             };
 
